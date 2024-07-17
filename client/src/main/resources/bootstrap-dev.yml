@@ -5,10 +5,9 @@ spring:
       config:
         server-addr: 121.40.24.147:8848
         namespace: 7989ab0f-4fba-4c0f-bdae-9bf1957b44a8
+        file-extension: yaml
       discovery:
-        enabled: true
         server-addr: 121.40.24.147:8848
-        service: ${spring.application.name}
         namespace: 7989ab0f-4fba-4c0f-bdae-9bf1957b44a8
     discovery:
       enabled: true
@@ -22,3 +21,8 @@ feign:
         read-timeout: 2000
       custom-mock:
         read-timeout: 5000
+
+
+client:
+  readTimeout: 5
+  connectTimeout: 10
