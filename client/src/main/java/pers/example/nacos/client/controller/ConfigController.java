@@ -5,7 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pers.example.nacos.common.IProductFacade;
+import pers.example.nacos.common.ICustomMockFacade;
+import pers.example.nacos.common.IGlobalMockFacade;
 
 /**
  * @Author: dongcx
@@ -15,13 +16,12 @@ import pers.example.nacos.common.IProductFacade;
 
 @Slf4j
 @RestController
-@RequestMapping("/execute")
-public class ExecuteController {
-    @Autowired
-    private IProductFacade productFacade;
-    @GetMapping("/test")
-    public String test(){
-        log.info("client execute test");
-        return productFacade.test();
+@RequestMapping("/config")
+public class ConfigController {
+    @GetMapping("/getValue")
+    public String getValue(){
+        log.info("config controller execute getValue");
+        return "get value";
     }
+
 }

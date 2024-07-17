@@ -1,3 +1,7 @@
 GET http://127.0.0.1:7091/product/test
 ###
-GET http://127.0.0.1:7080/execute/test
+GET http://127.0.0.1:7082/feign/global/timeout
+###
+GET http://127.0.0.1:7082/feign/custom/timeout
+###
+GET http://127.0.0.1:7082/config/getValue
