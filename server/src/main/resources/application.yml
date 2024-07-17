@@ -1,0 +1,15 @@
+server:
+  port: 7091
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 121.40.24.147:8848
+        service: ${spring.application.name}
+        namespace: 7989ab0f-4fba-4c0f-bdae-9bf1957b44a8
+    discovery:
+      enabled: true
+  application:
+    name: nacos-demo-server
