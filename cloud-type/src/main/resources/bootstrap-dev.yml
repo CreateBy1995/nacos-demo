@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      ### 配置中心参数
+      config:
+        server-addr: 121.40.24.147:8848
+        namespace: 7989ab0f-4fba-4c0f-bdae-9bf1957b44a8
+        file-extension: yaml
+      discovery:
+        server-addr: 121.40.24.147:8848
+        namespace: 7989ab0f-4fba-4c0f-bdae-9bf1957b44a8
+    discovery:
+      enabled: true
+

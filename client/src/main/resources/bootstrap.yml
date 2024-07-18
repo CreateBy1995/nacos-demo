@@ -1,7 +1,0 @@
-server:
-  port: 7082
-spring:
-  profiles:
-    active: prod
-  application:
-    name: nacos-demo-client

@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.40.24.147:8848
+        namespace: 7989ab0f-4fba-4c0f-bdae-9bf1957b44a8
+    discovery:
+      enabled: true
+nacos:
+  config:
+    server-addr: 121.40.24.147:8848
+    namespace: 7989ab0f-4fba-4c0f-bdae-9bf1957b44a8
+

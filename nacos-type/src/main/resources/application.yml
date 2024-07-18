@@ -1,0 +1,7 @@
+server:
+  port: 7081
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacos-demo-nacos-type

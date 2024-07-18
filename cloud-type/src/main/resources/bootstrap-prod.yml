@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      ### 配置中心参数
+      config:
+        server-addr: 121.40.24.147:8848
+        namespace: edf3074c-260a-4238-9c14-de59ca07af48
+        file-extension: yaml
+      discovery:
+        server-addr: 121.40.24.147:8848
+        namespace: edf3074c-260a-4238-9c14-de59ca07af48
+    discovery:
+      enabled: true
